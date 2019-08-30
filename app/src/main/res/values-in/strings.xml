@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Katalog Film</string>
+    <string name="ini_poster_film">ini poster film</string>
+    <string name="judul_film">Judul Film</string>
+    <string name="tgl_movie">December 12, 2019</string>
+    <string name="btn_detail_movie">Info lainnya</string>
+    <string name="background_poster">gambar poster</string>
+    <string name="description">Deskripsi</string>
+    <string name="date_release">Tanggal tayang</string>
+    <string name="inro_movie">inro movie</string>
+    <string name="poster_movie">poster film</string>
+    <string name="change_language_setting">ganti bahasa</string>
+    <string name="menu_movies_item">Film</string>
+    <string name="menu_tv_shows_item">Tv</string>
+    <string name="delete">hapus</string>
+    <string name="menu_movies_item_favorite">Film FAvorit</string>
+    <string name="menu_tv_shows_item_favorite">Tv Favorit</string>
+    <string name="add_favorite_message">Ditambahkan ke favorit</string>
+    <string name="btn_favorite">Favorit</string>
+    <string name="delete_favorite_message">Terhapus</string>
+    <string name="no_internet_connection">Tidak ada koneksi</string>
+    <string name="my_favorite">Favorit saya</string>
+</resources>
