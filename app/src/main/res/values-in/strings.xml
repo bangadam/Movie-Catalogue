@@ -21,4 +21,13 @@
     <string name="delete_favorite_message">Terhapus</string>
     <string name="no_internet_connection">Tidak ada koneksi</string>
     <string name="my_favorite">Favorit saya</string>
+    <string name="text_widget">Movie Cataloque</string>
+    <string name="empty_text">Kosong</string>
+    <string name="film_favorite">Film Favorit</string>
+    <string name="KelasMade">Daftar film favorit</string>
+    <string name="add_widget">Tambah Widget</string>
+    <string name="appwidget_text">Widget Katalog Film</string>
+    <string name="my_home">Beranda</string>
+    <string name="navigation_drawer_close">Tutup</string>
+    <string name="navigation_drawer_open">Buka</string>
 </resources>

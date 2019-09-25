@@ -25,4 +25,10 @@
     <string name="navigation_drawer_open">Open</string>
     <string name="navigation_drawer_close">Close</string>
     <string name="my_home">Home</string>
+    <string name="appwidget_text">Widget Movie Catalogue</string>
+    <string name="add_widget">Add widget</string>
+    <string name="text_widget">Movie Cataloque</string>
+    <string name="empty_text">Kosong</string>
+    <string name="film_favorite">Film Favorit</string>
+    <string name="KelasMade">Daftar film favorit</string>
 </resources>
