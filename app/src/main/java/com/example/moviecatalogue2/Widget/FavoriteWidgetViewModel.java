@@ -18,8 +18,7 @@ public class FavoriteWidgetViewModel extends AndroidViewModel {
 
     public FavoriteWidgetViewModel(@NonNull Application application) {
         super(application);
-        repository = new FavoriteRepository(application);
-        allMovieFavorite = repository.getAllMoviesFavorite();
+
     }
 
     public void deleteMovie(MovieResults movieResults) {

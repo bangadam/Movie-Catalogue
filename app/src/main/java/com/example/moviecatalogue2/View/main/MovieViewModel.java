@@ -7,7 +7,6 @@ import android.arch.lifecycle.MutableLiveData;
 import android.support.annotation.NonNull;
 
 import com.example.moviecatalogue2.Model.Movie;
-import com.example.moviecatalogue2.Model.MovieResults;
 import com.example.moviecatalogue2.Model.Tv;
 
 

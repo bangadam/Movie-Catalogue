@@ -50,4 +50,7 @@ dependencies {
     //Room Component
     implementation "android.arch.persistence.room:runtime:$room_version"
     annotationProcessor "android.arch.persistence.room:compiler:$room_version"
+
+    //Searchbox
+    implementation 'com.quinny898.library.persistentsearch:library:1.1.0-SNAPSHOT'
 }

@@ -3,6 +3,7 @@ package com.example.moviecatalogue2.View.main.fragment;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -18,6 +19,9 @@ import com.example.moviecatalogue2.Model.TvResults;
 import com.example.moviecatalogue2.R;
 import com.example.moviecatalogue2.View.main.MovieViewModel;
 import com.example.moviecatalogue2.View.main.RecylerViewTvShowsAdapter;
+import com.example.moviecatalogue2.View.search.SearchActivity;
+import com.quinny898.library.persistentsearch.SearchBox;
+import com.quinny898.library.persistentsearch.SearchResult;
 
 import java.util.List;
 
@@ -33,7 +37,8 @@ public class TVShowsFragment extends Fragment {
     private RecyclerView recyclerView;
     MovieViewModel movieViewModel;
     @BindView(R.id.progressBar_Tv) ProgressBar progressBar;
-
+    @BindView(R.id.search_tv)
+    SearchBox searchBox;
     public TVShowsFragment() {
         // Required empty public constructor
     }
@@ -61,6 +66,42 @@ public class TVShowsFragment extends Fragment {
             public void onChanged(@Nullable Tv tv) {
                 List<TvResults> tvResults = tv.getResults();
                 recylerViewTvShowsAdapter.setTvModels(tvResults);
+            }
+        });
+
+        searchBox.setSearchListener(new SearchBox.SearchListener() {
+
+            @Override
+            public void onSearchOpened() {
+
+            }
+
+            @Override
+            public void onSearchCleared() {
+
+            }
+
+            @Override
+            public void onSearchClosed() {
+
+            }
+
+            @Override
+            public void onSearchTermChanged(String s) {
+
+            }
+
+            @Override
+            public void onSearch(String s) {
+                Intent intent = new Intent(getActivity(), SearchActivity.class);
+                intent.putExtra("key", s);
+                intent.putExtra("fragment", "tv");
+                startActivity(intent);
+            }
+
+            @Override
+            public void onResultClick(SearchResult searchResult) {
+
             }
         });
     }

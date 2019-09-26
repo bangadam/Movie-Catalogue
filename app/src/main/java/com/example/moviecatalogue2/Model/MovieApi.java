@@ -1,6 +1,7 @@
-package com.example.moviecatalogue2.View.main;
+package com.example.moviecatalogue2.Model;
 
 import com.example.moviecatalogue2.Model.Movie;
+import com.example.moviecatalogue2.Model.SearchMovieResults;
 import com.example.moviecatalogue2.Model.Tv;
 
 import retrofit2.Call;
@@ -14,7 +15,4 @@ public interface MovieApi {
 
     @GET("tv/popular")
     Call<Tv> getTvPopular(@Query("api_key") String apiKey);
-
-    @GET("search/movie")
-    Call<Movie> getMovieBySearch(@Query("query") String query, @Query("api_key") String apiKey);
 }

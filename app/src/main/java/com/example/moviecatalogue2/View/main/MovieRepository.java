@@ -3,7 +3,7 @@ package com.example.moviecatalogue2.View.main;
 import android.arch.lifecycle.MutableLiveData;
 
 import com.example.moviecatalogue2.Model.Movie;
-import com.example.moviecatalogue2.Model.MovieResults;
+import com.example.moviecatalogue2.Model.MovieApi;
 import com.example.moviecatalogue2.Model.Tv;
 
 import retrofit2.Call;
