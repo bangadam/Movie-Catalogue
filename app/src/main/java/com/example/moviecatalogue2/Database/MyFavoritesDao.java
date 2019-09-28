@@ -29,6 +29,9 @@ public interface MyFavoritesDao {
     @Query("SELECT * FROM movie_table")
     LiveData<List<MovieResults>> getMovieFavorites();
 
+    @Query("SELECT * FROM movie_table")
+    List<MovieResults> getMovieWidget();
+
     @Query("SELECT * FROM tv_table")
     LiveData<List<TvResults>> getTvFavorites();
 }

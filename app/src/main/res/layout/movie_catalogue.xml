@@ -9,7 +9,7 @@
         android:weightSum="10">
 
         <StackView
-            android:id="@+id/stack_view"
+            android:id="@+id/stack_views"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="9"
@@ -30,7 +30,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/empty_view"
+        android:id="@+id/kosong_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"

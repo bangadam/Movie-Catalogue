@@ -19,11 +19,14 @@ import com.example.moviecatalogue2.R;
 import com.example.moviecatalogue2.View.favorite.FavoriteViewModel;
 import com.example.moviecatalogue2.View.main.MovieViewModel;
 import com.example.moviecatalogue2.View.favorite.RecylerViewTvShowsAdapter;
+import com.quinny898.library.persistentsearch.SearchBox;
 
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
+import static android.view.View.GONE;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -35,6 +38,8 @@ public class FavoriteTvFragment extends Fragment {
     FavoriteViewModel favoriteViewModel;
     @BindView(R.id.progressBar_Tv)
     ProgressBar progressBar;
+    @BindView(R.id.search_tv)
+    SearchBox searchBox;
 
     public FavoriteTvFragment() {
         // Required empty public constructor
@@ -52,6 +57,7 @@ public class FavoriteTvFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         ButterKnife.bind(this, view);
+        searchBox.setVisibility(GONE);
         recyclerView = view.findViewById(R.id.recyler_tv);
         final RecylerViewTvShowsAdapter recylerViewTvShowsAdapter = new RecylerViewTvShowsAdapter(getContext());
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
